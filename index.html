@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="./script.js"></script>
+	<title>Challenge ONE - Encriptador</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<h1">Encriptador - 1 Desktop</h1>
+		</div>
+	</header>
+	<main class="contenedor-principal">
+		<div class="container">
+			<div class="logo">
+				<!-- <h1>Aquí va el logo</h1> -->
+				<img class="logoImg" src="./imagenes/logo.png" alt="">
+			</div>
+			<div class="left">
+				<!-- <h1>Aquí va el panel izquierdo</h1> -->
+				<input type="text" class="textoEncriptado" id="mensaje" placeholder="Ingrese el texto aquí">
+			</div>
+			<div class="right">
+				<!-- <h1>Aquí va el panel derecho</h1> -->
+				<img src="./imagenes/Munheco.png" id="imgDer" alt="">
+
+				<h2 id="texto">Ningun mensaje fue encontrado</h2>
+				<textarea name="resultado" id="textoDesencriptado" cols="80" rows="8">Ingrese el texto que desea encriptar o desencriptar</textarea>
+
+				<button type="button" id="btnCopiar" onclick="copiar()">Copiar</button>					
+			</div>
+
+			<div class="left-button">
+				<!-- <h1>Aquí van los botones</h1> -->
+				<div class="subtitle">
+					<p>&#33 Solo minusculas y sin acentos</p>
+				</div>
+				<button type="button" id="btnEncriptar" onclick="encriptar()">Encriptador</button>
+				
+				<button type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+			</div>
+		</div>
+
+		<script>
+			var btn = document.querySelector("#btnEncriptar");
+			btn.onclick = encriptar;
+		</script>
+	</main>
+</body>
+</html>

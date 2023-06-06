@@ -1,0 +1,166 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;
+	background: #E5E5E5;
+}
+
+.contenedor-principal{
+	/* background: #E5E5E5; */
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container{
+	margin: auto;
+	width: 960px;
+	height: 650px;
+	padding: 5px;
+	border-radius:5px;
+	background: #F3F5FC;
+}
+
+.logo{
+	width: 50%;
+	float: left; /*para la posicion del objeto*/
+	/* background: red; */
+}
+
+/*Da la posicion del panel izquierdo*/
+.left{
+	float: left;
+	width: 70%;
+	height: 70%;
+	border-radius: 15px;
+	/* background: white; */
+}
+
+.right{
+	float: right;
+	width: 30%;
+	height: auto;
+	border-radius: 15px;
+	background: white;
+}
+
+.left-button{
+	float: left;
+	width: 70%;
+	height: auto;
+	border-radius: 24px;
+	/* background: pink; */
+}
+
+.logoImg{
+	margin-top: 1%;
+	margin-left: 2%;
+	float: inherit;
+}
+
+.title{
+	/* float:inherit;	 */
+	/* margin-left: 15%; */
+	margin: auto;
+	width: 960px;
+	padding: 5px;
+	font-size: 15px;
+	color: #0A3871;
+}
+
+.subtitle{
+	/* float:inherit;	 */
+	margin-left: 10%;
+	padding: 5px;
+	font-size: 10px;
+	color: #0A3871;
+}
+.textoEncriptado{
+	float: left;
+	line-height:initial;
+	margin-left: 10%;
+	margin-top: 10%;
+	width: 80%;
+	height: 70%;
+	color: #0A3871;
+	font-size: 20px;
+	border: none;	/*Quitamos el borde*/
+	outline: none;	/*al dar clic no marque el recuadro*/
+	background: #F3F5FC;
+	text-align: left;
+}
+
+#imgDer{
+	margin-left: 2%;
+	margin-top: 20%;
+	width: 90%;
+	height: auto;
+}
+
+#texto,textoEncriptado{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 20px;
+	text-align: center;
+	color: #0A3871;
+}
+
+#textoDesencriptado{
+	float: left;
+	margin-left: 5%;
+	color: #0A3871;
+	width: 80%;
+	height: 60%;
+	border: none;
+	outline: none;
+	font-size: 12px;
+	text-align: center;
+}
+
+#btnEncriptar{
+	font: inherit;
+	padding: 24px;
+	width: 35%;
+	/* height: 25%; */
+	border-radius: 20px;
+	margin-left: 15%;
+	background: #0A3871;
+	border: #032247;
+	color: #D8DFE8;
+	cursor: pointer;
+	user-select: none;
+	max-width: 50%;
+	display: inline-block;
+}
+
+#btnDesencriptar{
+	font: inherit;
+	padding: 24px;
+	width: 35%;
+	height: 25%;
+	border-radius: 20px;
+	margin-left: 10%;
+	background: #D8DFE8;
+	border: #606061;
+	cursor: pointer;
+	user-select: none;
+	max-width: 50%;
+	display: inline-block;
+}
+
+#btnCopiar{
+	font: inherit;
+	margin-left: 33%;
+	margin-top: 80%;
+	padding: 24px;
+	width: 40%;
+	height: 15%;
+	background: #D8DFE8;
+	border-radius: 24px;
+	border: #606061;
+	display: none;
+	cursor: pointer;
+	user-select: none;
+}
